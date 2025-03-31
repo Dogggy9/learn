@@ -10,9 +10,6 @@ public class Solution3 {
 
         COMPLITED;
 
-        private Status(){
-        }
-
         // started
 
         // in progress
@@ -22,18 +19,18 @@ public class Solution3 {
 
     public static class Task{
 
-        private Solution2.Status status = Solution2.Status.STARTED;
+        private Status status = Status.STARTED;
 
-        public void setStatus(final Solution2.Status status) {
+        public void setStatus(final Status status) {
             this.status = status;
         }
     }
 
     public static void main(String[] args) {
-        Solution1.Task task = new Solution1.Task();
+        Task task = new Task();
         //
-        task.setStatus(Solution1.Status.IN_PROGRESS);
+        task.setStatus(Status.IN_PROGRESS);
         //
-        task.setStatus(Solution1.Status.COMPLITED);
+        task.setStatus(Status.COMPLITED);
     }
 }
