@@ -9,12 +9,6 @@ public class Solution3 {
         IN_PROGRESS,
 
         COMPLITED;
-
-        // started
-
-        // in progress
-
-        // complited
     }
 
     public static class Task{
