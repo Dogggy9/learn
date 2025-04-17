@@ -2,15 +2,15 @@ package com.doggy.java.section071_class_types;
 
 public class OuterWithNotStaticInner {
 
-    private static int value1;
-    private int value2;
+    private static int value1 = 1;
+    private int value2 = 2;
 
-    static void staticMethod(){
+    private static void staticMethod(){
 
     }
 
-    void method(){
-
+    private void method(){
+        Inner o = new Inner();
     }
 
     class Inner{
@@ -22,5 +22,11 @@ public class OuterWithNotStaticInner {
             method();
         }
 
+    }
+
+    public static void main(String[] args) {
+        OuterWithNotStaticInner outer = new OuterWithNotStaticInner();
+        Inner o = outer.new Inner();
+        o.m();
     }
 }
