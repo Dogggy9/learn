@@ -13,7 +13,7 @@ public class OuterWithNotStaticInner {
         Inner o = new Inner();
     }
 
-    class Inner{
+    public class Inner{
 
         void m(){
             value1 = 7;
